@@ -31,19 +31,6 @@ provider "prismacloud" {
 #    name = "My group"
 #}
 
-/*
-You can also create cloud accounts from a CSV file using native Terraform
-HCL and looping.  Assume you have a CSV file of AWS accounts that looks like this (with
-"||" separating account group IDs from each other):
-
-accountId,externalId,groupIDs,name,roleArn
-123456789,PrismaExternalId,Default Account Group||AWS Account Group,123466789,arn:aws:iam::123456789:role/RedlockReadWriteRole
-213456789,PrismaExternalId,Default Account Group||AWS Account Group,213456789,arn:aws:iam::213456789:role/RedlockReadWriteRole
-321466019,PrismaExternalId,Default Account Group||AWS Account Group,321466019,arn:aws:iam::321466019:role/RedlockReadWriteRole
-
-Here's how you would do this (Terraform 0.12 code):
-*/
-
 locals {
   instances = csvdecode(file("aws.csv"))
 }
