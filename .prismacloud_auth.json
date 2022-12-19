@@ -1,0 +1,5 @@
+{
+    "url" : "<PRISMA_CLOUD_API_URL",
+    "username" : "<PRISMA_CLOUD_ACCESS_KEY>",
+    "password" : "<PRISMA_CLOUD_ACCESS_SECRET>"
+}
