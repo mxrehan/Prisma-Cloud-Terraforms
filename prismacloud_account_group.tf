@@ -12,11 +12,8 @@ provider "prismacloud" {
     url = var.url
     username = var.username
     password = var.password
-#     {
-#     "url" : "<PRISMA_CLOUD_API_URL",
-#     "username" : "<PRISMA_CLOUD_ACCESS_KEY>",
-#     "password" : "<PRISMA_CLOUD_ACCESS_SECRET>"
-# }
+    #json_config_file = ".prismacloud_auth.json"
+
 }
 
 # locals {
