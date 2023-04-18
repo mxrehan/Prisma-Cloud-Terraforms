@@ -1,4 +1,4 @@
-# Manage an alert rule. This TF will create an alert rule with multiple account groups.
+# Manage an alert rule. This TF will create an alert rule.
 terraform {
   required_providers {
     prismacloud = {
