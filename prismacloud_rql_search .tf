@@ -4,7 +4,7 @@ terraform {
   required_providers {
     prismacloud = {
       source = "PaloAltoNetworks/prismacloud"
-      version = "1.2.10"
+      version = "1.3.1"
     }
   }
 }
@@ -19,6 +19,7 @@ provider "prismacloud" {
 resource "prismacloud_rql_search" "example" {
     search_type = "config"
     query = "config from cloud.resource where api.name = 'aws-ec2-describe-instances'"
+    limit = 100
     time_range {
         relative {
             unit = "hour"
