@@ -28,7 +28,7 @@ data "prismacloud_account_supported_features" "prismacloud_supported_features" {
 # Fetch AWS CFT s3 presigned url based on required features
 data "prismacloud_aws_cft_generator" "prismacloud_account_cft" {
     account_type = "account"
-    account_id = "675411814581"
+    account_id = "xxxxxxx"
     features = data.prismacloud_account_supported_features.prismacloud_supported_features.supported_features
 }
 
